@@ -31,5 +31,6 @@ def load_config(file_path):
     with open(file_path, 'r', encoding='UTF-8') as config_file:
         config_str = config_file.read()
     return config_str
-config = load_config('config.json')
-pyg.walk(df, env='Streamlit', dark='dark', spec=config)
+# config = load_config('config.json')
+# pyg.walk(df, env='Streamlit', dark='dark', spec=config)
+pyg.walk(df, env='Streamlit', dark='dark')
