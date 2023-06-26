@@ -9,7 +9,7 @@ import pygwalker as pyg
 
 # Set page configuration
 st.set_page_config(
-    page_title="PyGWalker Demo",
+    page_title="Charting App Demo",
     page_icon=":snake:",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -23,8 +23,8 @@ def load_data(url):
 # df = load_data("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
 df=pd.read_csv("data/orders.csv")
 # Set title and subtitle
-st.title('PyGWalker Demo App')
-st.subheader('A demonstration of the PyGWalker Python library')
+st.title('Interactive Charts App Demonstration')
+st.subheader('Charts App v1.1')
 
 def load_config(file_path):
     """ load_config displays PyGWalker UI """
