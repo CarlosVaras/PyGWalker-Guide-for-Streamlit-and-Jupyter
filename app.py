@@ -20,8 +20,8 @@ def load_data(url):
     """ load_data returns dataframe using URL param """
     dataframe = pd.read_csv(url)
     return dataframe
-df = load_data("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
-
+# df = load_data("https://raw.githubusercontent.com/mwaskom/seaborn-data/master/tips.csv")
+df=pd.read_csv("data/orders.csv")
 # Set title and subtitle
 st.title('PyGWalker Demo App')
 st.subheader('A demonstration of the PyGWalker Python library')
